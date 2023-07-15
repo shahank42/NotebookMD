@@ -4,11 +4,11 @@
 	let rawMarkdown = "";
 </script>
 
-<main class="h-64 flex flex-grow w-full bg-zinc-800">
-	<div class="bg-zinc-600 w-0 flex-grow">
-		<textarea class="w-full h-full" bind:value={rawMarkdown} />
+<main class="h-[99dvh] flex w-full">
+	<div class="w-0 flex-grow">
+		<textarea class="bg-zinc-100 w-full h-full p-3 font-mono resize-none focus:outline-none appearance-none" bind:value={rawMarkdown} />
 	</div>
-	<div class="bg-zinc-400 w-0 flex-grow">
+	<div class="w-0 flex-grow prose max-w-none p-3 overflow-y-scroll">
 		{@html marked.parse(rawMarkdown, { mangle: false, headerIds: false })}
 	</div>
 </main>
