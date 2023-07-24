@@ -40,7 +40,7 @@
 		}`}
 	>
 		<article
-			class={`h-full bg-white inline-block transition-transform align-top prose font-serif prose-xl prose-headings w-full whitespace-normal p-5 ${
+			class={`h-full bg-white inline-block transition-transform align-top prose prose-base prose-headings w-full whitespace-normal p-5 ${
 				toggleEdit && '-translate-x-full'
 			} `}
 		>
