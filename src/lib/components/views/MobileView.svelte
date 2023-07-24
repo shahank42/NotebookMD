@@ -11,7 +11,7 @@
 
 <div class="h-full w-full flex flex-col">
 	<div class=" w-full h-14 flex">
-		<button class="bg-white hover:focus:bg-zinc-300 w-14 flex justify-center">
+		<button class="bg-white hover:focus:bg-zinc-300 w-14 flex justify-center align-middle">
 			<img alt="Files" src={fileIconUrl} class="w-5" />
 		</button>
 		<input class="w-full px-3 text-xl" type="text" value="" placeholder="Untitled Note" />
