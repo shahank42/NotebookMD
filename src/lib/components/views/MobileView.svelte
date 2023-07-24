@@ -4,13 +4,17 @@
 
 	import editIconUrl from '$lib/assets/editIcon.svg?url';
 	import previewIconUrl from '$lib/assets/previewIcon.svg?url';
+	import fileIconUrl from '$lib/assets/fileIcon.svg?url';
 
 	let mobileToggleView = false;
 </script>
 
 <div class="h-full w-full flex flex-col">
 	<div class=" w-full h-14 flex">
-		<input class="w-full px-3 text-xl" type="text" value="Filename" />
+		<button class="bg-white hover:focus:bg-zinc-300 w-14 flex justify-center">
+			<img alt="Files" src={fileIconUrl} class="w-5" />
+		</button>
+		<input class="w-full px-3 text-xl" type="text" value="" placeholder="Untitled Note" />
 	</div>
 
 	<div class="h-full w-full inline overflow-x-hidden whitespace-nowrap">
